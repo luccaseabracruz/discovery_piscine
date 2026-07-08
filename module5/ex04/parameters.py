@@ -3,4 +3,4 @@
 import sys
 
 size = len(sys.argv[1:])
-print(size)
+print(f"Number of parameters: {size}")
