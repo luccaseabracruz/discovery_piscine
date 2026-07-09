@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 def add_one(n):
-    return n + 1
+    n += 1
 
 n = 0
 print(n)
