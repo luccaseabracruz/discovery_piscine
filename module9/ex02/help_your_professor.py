@@ -1,7 +1,11 @@
 #! /usr/bin/env python3
 
 def average(class_list: dict):
-    return sum(class_list.values()) / len(class_list)
+    class_len = len(class_list)
+    if (class_len < 1):
+        return 0.00
+    else:
+        return sum(class_list.values()) / len(class_list)
 
 class_3B = {
 "marine": 18,
