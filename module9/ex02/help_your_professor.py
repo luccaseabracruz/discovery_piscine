@@ -5,7 +5,7 @@ def average(class_list: dict):
     if (class_len < 1):
         return 0.00
     else:
-        return sum(class_list.values()) / len(class_list)
+        return sum(class_list.values()) / class_len
 
 class_3B = {
 "marine": 18,
