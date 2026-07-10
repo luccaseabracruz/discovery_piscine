@@ -1,7 +1,12 @@
 #! /usr/bin/env python3
 
 def famous_births(figures: dict):
-    print(figures)
+    sorted_list = sorted(
+        figures.values(),
+        key = lambda person: int(person["date_of_birth"])
+    )
+    for person in sorted_list:
+        print(f"{person['name']} is a great scientist born in {person['date_of_birth']}.")
 
 women_scientists = {
 "ada": { "name": "Ada Lovelace", "date_of_birth": "1815" },
