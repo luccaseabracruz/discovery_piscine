@@ -2,10 +2,10 @@
 import sys
 
 def greetings(name="noble stranger"):
-    if  isinstance(name, str) == False:
+    if  isinstance(name, str) == True:
+        print(f"Hello, {name}.")
+    else:
         print("Error! It was not a name.")
-        sys.exit()
-    print(f"Hello, {name}.")
 
 greetings('Alexandra')
 greetings('Wil')
